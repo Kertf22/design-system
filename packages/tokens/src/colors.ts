@@ -41,7 +41,25 @@ export const colors = {
   orange500: '#FF9800',
   orange700: '#F57C00',
   orange900: '#E65100',
+
+  // selected300: '#00B37E',
+  // selected500: '#00875F',
+  // selected700: '#015F43',
+  // selected900: '#00291D',
 }
+// Selected theme is green
+// if(theme === 'green'){
+//   const theme = createTheme({
+//     colors: {
+//       ...colors,
+//       selected300: colors.green300,
+//       selected500: colors.green500,
+//       selected700: colors.green700,
+//       selected900: colors.green900,
+//     },
+
+// CreateTheme function
+// Para criar temas vindos do banco de dados
 
 // color_1(pin):"#2E2E2E"
 // color_1_light(pin):"#850000"
