@@ -24,5 +24,5 @@ module.exports = {
 
     return config;
   },
-  staticDirs: ['./fonts']
+  staticDirs: ['../src/fonts']
 }

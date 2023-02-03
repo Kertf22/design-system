@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.1.0
+
+### Minor Changes
+
+- NPM
+
 ## 3.0.0
 
 ### Major Changes
