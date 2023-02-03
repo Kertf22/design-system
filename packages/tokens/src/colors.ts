@@ -42,10 +42,10 @@ export const colors = {
   orange700: '#F57C00',
   orange900: '#E65100',
 
-  // selected300: '#00B37E',
-  // selected500: '#00875F',
-  // selected700: '#015F43',
-  // selected900: '#00291D',
+  selected300: '#e23a39',
+  selected500: '#bb181b',
+  selected700: '#a5161a',
+  selected900: '#850000',
 }
 // Selected theme is green
 // if(theme === 'green'){
