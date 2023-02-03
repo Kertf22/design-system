@@ -1,6 +1,6 @@
 {
   "name": "@bet-kit-ui/react",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -19,7 +19,6 @@
     "@bet-kit-ui/ts-config": "*",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
-
     "tsup": "^6.5.0",
     "typescript": "^4.9.4"
   },
@@ -29,6 +28,5 @@
     "@stitches/react": "^1.2.8",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0"
-
   }
 }

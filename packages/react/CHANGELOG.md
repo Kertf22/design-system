@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.4.0
+
+### Minor Changes
+
+- 0ed2199: Adding new Ticker component
+
 ## 3.3.0
 
 ### Minor Changes
