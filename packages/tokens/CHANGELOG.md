@@ -1,5 +1,23 @@
 # @bet-kit-ui/tokens
 
+## 2.4.0
+
+### Minor Changes
+
+- Build projects
+
+## 2.3.0
+
+### Minor Changes
+
+- NPM
+
+## 2.2.0
+
+### Minor Changes
+
+- NPM new version
+
 ## 2.1.0
 
 ### Minor Changes

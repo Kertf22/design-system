@@ -11,8 +11,7 @@
             ],
             "dependsOn": [
                 "^build"
-            ],
-            "cache": false
+            ]
         }
     }
 }

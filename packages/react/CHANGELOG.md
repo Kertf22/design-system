@@ -1,5 +1,35 @@
 # @bet-kit-ui/react
 
+## 3.3.0
+
+### Minor Changes
+
+- Exporting styling
+
+## 3.2.0
+
+### Minor Changes
+
+- Build projects
+
+## 3.1.0
+
+### Minor Changes
+
+- NPM
+
+## 3.0.0
+
+### Major Changes
+
+- 2170d27: Try to build a dist folder to NPM
+
+## 2.2.0
+
+### Minor Changes
+
+- NPM new version
+
 ## 2.1.0
 
 ### Minor Changes

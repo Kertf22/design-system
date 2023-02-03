@@ -7,8 +7,8 @@
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "changeset": "changeset",
-    "version-packges": "changeset version",
-    "release": "turbo run build --filter=packages/docs && changeset publish"
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=!docs && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.0",

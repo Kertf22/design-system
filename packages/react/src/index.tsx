@@ -9,3 +9,14 @@ export * from './components/Checkbox/index'
 export * from './components/MultiStep/index'
 export * from './components/BettingAdd/index'
 export * from './components/Icon/index'
+
+export {
+  createTheme,
+  theme,
+  config,
+  css,
+  styled,
+  getCssText,
+  globalCss,
+  keyframes,
+} from './styles/index'
