@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.2.0
+
+### Minor Changes
+
+- Build projects
+
 ## 3.1.0
 
 ### Minor Changes

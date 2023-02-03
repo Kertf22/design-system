@@ -1,5 +1,11 @@
 # @bet-kit-ui/eslint-config
 
+## 2.4.0
+
+### Minor Changes
+
+- Build projects
+
 ## 2.3.0
 
 ### Minor Changes
