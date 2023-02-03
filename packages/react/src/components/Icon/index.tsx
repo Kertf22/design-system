@@ -1,18 +1,15 @@
-import { IconContainer, IconSVG } from './style'
+import { IconSVG } from './style'
 import { icons } from '@bet-kit-ui/tokens'
 
 export interface IconProps {
   name?: keyof typeof icons
+  size?: 'sm' | 'md' | 'lg'
 }
 
-export function Icon({ name }: IconProps) {
+export function Icon({ name, size }: IconProps) {
   if (!name) return null
 
-  return (
-    <IconContainer>
-      <IconSVG name={name} />
-    </IconContainer>
-  )
+  return <IconSVG name={name} size={size} />
 }
 
 Icon.displayName = 'Icon'

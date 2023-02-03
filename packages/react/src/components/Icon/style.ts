@@ -10,26 +10,6 @@ Object.keys(icons).forEach((key) => {
   }
 })
 
-export const IconContainer = styled('div', {
-  variants: {
-    size: {
-      sm: {
-        width: '$4',
-        height: '$4',
-      },
-
-      md: {
-        width: '$6',
-        height: '$6',
-      },
-    },
-  },
-
-  defaultVariants: {
-    size: 'md',
-  },
-})
-
 export const IconSVG = styled('i', {
   display: 'inline-block',
   height: '100%',
@@ -40,15 +20,42 @@ export const IconSVG = styled('i', {
 
   variants: {
     name,
+    size: {
+      sm: {
+        width: '$4',
+        height: '$4',
+        '&:before': {
+          fontSize: '$xs',
+        },
+      },
+
+      md: {
+        width: '$6',
+        height: '$6',
+        '&:before': {
+          fontSize: '$sm',
+        },
+      },
+
+      lg: {
+        width: '$8',
+        height: '$8',
+        '&:before': {
+          fontSize: '$md',
+        },
+      },
+    },
   },
 
   '&:before': {
     fontFamily: 'tbicons!important',
-    fontSize: '$4',
     fontWeight: 'normal',
     fontStyle: 'normal',
     fontVariant: 'normal',
     textTransform: 'none',
-    display: 'inline-block',
+  },
+
+  defaultVariants: {
+    size: 'md',
   },
 })

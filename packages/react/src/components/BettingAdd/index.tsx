@@ -1,5 +1,5 @@
 import { ComponentProps, useEffect, useState } from 'react'
-import { BettingAddContainer, PriceDown, PriceUp } from './style'
+import { BettingAddContainer, PriceIcon } from './style'
 import { Text } from '../Text'
 
 export interface BettingAddProps
@@ -8,26 +8,26 @@ export interface BettingAddProps
 }
 
 export function BettingAdd({ price, ...props }: BettingAddProps) {
-  // const []
-
-  //   // Compare last price and if it's higher than the current price, then add a class to the container
   const [lastPrice, setLastPrice] = useState(0)
-  const [showingIcon, setShowingIcon] = useState(<></>)
+  const [selectedIcon, setSelectedIcon] = useState<
+    'arrowUp' | 'arrowDown' | ''
+  >('arrowUp')
 
   useEffect(() => {
     if (lastPrice > price) {
-      setShowingIcon(<PriceDown name="arrowDown" />)
+      setSelectedIcon('arrowDown')
     } else if (lastPrice < price) {
-      setShowingIcon(<PriceUp name="arrowUp" />)
+      setSelectedIcon('arrowUp')
     } else {
-      setShowingIcon(<></>)
+      setSelectedIcon('')
     }
     setLastPrice(price)
-  }, [lastPrice, price])
+  }, [lastPrice])
 
   return (
     <BettingAddContainer {...props}>
-      {showingIcon}
+      {selectedIcon && <PriceIcon name={selectedIcon} size="sm" />}
+
       <Text size={'xs'}>{price}</Text>
     </BettingAddContainer>
   )

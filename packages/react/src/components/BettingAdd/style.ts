@@ -21,10 +21,16 @@ export const BettingAddContainer = styled('div', {
   cursor: 'pointer',
 })
 
-export const PriceUp = styled(Icon, {
-  color: '$green',
-})
-
-export const PriceDown = styled(Icon, {
-  color: '$red',
+export const PriceIcon = styled(Icon, {
+  position: 'absolute',
+  variant: {
+    up: {
+      color: '$green300',
+      top: -10,
+    },
+    down: {
+      color: '$red300',
+      top: 48,
+    },
+  },
 })
