@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.0.0
+
+### Major Changes
+
+- 2170d27: Try to build a dist folder to NPM
+
 ## 2.2.0
 
 ### Minor Changes
