@@ -1,5 +1,11 @@
 # @bet-kit-ui/ts-config
 
+## 2.5.0
+
+### Minor Changes
+
+- Token updates and Component props
+
 ## 2.4.0
 
 ### Minor Changes

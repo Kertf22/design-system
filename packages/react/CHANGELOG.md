@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.5.0
+
+### Minor Changes
+
+- Token updates and Component props
+
 ## 3.4.0
 
 ### Minor Changes
