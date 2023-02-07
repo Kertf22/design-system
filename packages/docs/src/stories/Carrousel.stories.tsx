@@ -5,16 +5,13 @@ export default {
   title: 'Data Display/Carrousel',
   component: Carrousel,
   args: {
-    children: (
-      <>
-        {Array.from({ length: 10 }).map((_, index) => (
-          <Box key={index}>
-            <img src={`https://picsum.photos/seed/${index}/200/300`} />
-          </Box>
-        ))}
-      </>
-    ),
-    perView: 'auto',
+    children: Array.from({ length: 20 }).map((_, index) => (
+      <Box key={index}>
+        <img src={`https://picsum.photos/seed/${index}/200/300`} />
+      </Box>
+    )),
+
+    perView: 5,
     spacing: 12,
   },
   argTypes: {
