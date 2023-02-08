@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.8.0
+
+### Minor Changes
+
+- Fix: Mutation Observer carrousel
+
 ## 3.7.0
 
 ### Minor Changes
