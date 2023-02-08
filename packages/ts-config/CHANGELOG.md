@@ -1,5 +1,11 @@
 # @bet-kit-ui/ts-config
 
+## 2.6.0
+
+### Minor Changes
+
+- Add new Carrousel component
+
 ## 2.5.0
 
 ### Minor Changes

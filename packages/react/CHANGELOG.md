@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.6.0
+
+### Minor Changes
+
+- Add new Carrousel component
+
 ## 3.5.0
 
 ### Minor Changes
