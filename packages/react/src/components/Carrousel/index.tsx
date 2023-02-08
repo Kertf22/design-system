@@ -60,7 +60,7 @@ export function Carrousel({
             e.stopPropagation() || instanceRef.current?.next()
           }
           disabled={
-            instanceRef.current &&
+            !!instanceRef.current &&
             currentSlide ===
               instanceRef.current?.track?.details?.slides?.length - 1
           }
