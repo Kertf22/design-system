@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'tbicons';
+  src:  url('tbicons.eot?cc68ha');
+  src:  url('tbicons.eot?cc68ha#iefix') format('embedded-opentype'),
+    url('tbicons.ttf?cc68ha') format('truetype'),
+    url('tbicons.woff?cc68ha') format('woff'),
+    url('tbicons.svg?cc68ha#tbicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

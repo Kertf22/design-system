@@ -1,0 +1,2 @@
+import{c as s,a as e,T as t}from"./index-3c9d4535.js";import{a,j as o}from"./jsx-runtime-310bfdac.js";import"./index-39d17dc8.js";import"./es.object.get-own-property-descriptor-037fa860.js";import"./index-f97499ea.js";const l={title:"Form/Checkbox",component:s,args:{},decorators:[r=>a(e,{as:"label",css:{display:"flex",flexDirection:"row",gap:"$2"},children:[o(t,{children:"Accept terms of use"}),o(r,{})]})]},n={},d=["Primary"];export{n as Primary,d as __namedExportsOrder,l as default};
+//# sourceMappingURL=Checkbox.stories-d22d9972.js.map

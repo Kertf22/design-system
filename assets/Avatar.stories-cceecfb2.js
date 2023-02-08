@@ -1,0 +1,2 @@
+import{A as t}from"./index-3c9d4535.js";import"./index-39d17dc8.js";import"./es.object.get-own-property-descriptor-037fa860.js";import"./index-f97499ea.js";import"./jsx-runtime-310bfdac.js";const i={title:"Data Display/Avatar",component:t,args:{src:"https://avatars.githubusercontent.com/u/25166301?v=4",alt:"Avatar"},argTypes:{src:{control:{type:"text"}}}},e={},p={args:{src:""}},m=["Primary","WithFallBack"];export{e as Primary,p as WithFallBack,m as __namedExportsOrder,i as default};
+//# sourceMappingURL=Avatar.stories-cceecfb2.js.map

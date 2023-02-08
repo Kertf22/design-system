@@ -1,0 +1,2 @@
+import{d as o}from"./index-3c9d4535.js";import{i as t}from"./index-59fb9569.js";import"./index-39d17dc8.js";import"./es.object.get-own-property-descriptor-037fa860.js";import"./index-f97499ea.js";import"./jsx-runtime-310bfdac.js";const n={title:"Data Display/Icons",component:o,args:{name:"add"},argTypes:{name:{options:Object.keys(t),control:{type:"select"}}}},p={},c=["Primary"];export{p as Primary,c as __namedExportsOrder,n as default};
+//# sourceMappingURL=Icon.stories-bdba830c.js.map

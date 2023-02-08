@@ -1,0 +1,2 @@
+import{B as t}from"./index-3c9d4535.js";import"./index-39d17dc8.js";import"./es.object.get-own-property-descriptor-037fa860.js";import"./index-f97499ea.js";import"./jsx-runtime-310bfdac.js";const p={title:"Betting/ Betting Add",component:t,args:{price:20.1},argTypes:{price:{},onClick:{action:"clicked"}}},c={},d=["Primary"];export{c as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=BettingAdd.stories-4ce1ace1.js.map
