@@ -1,6 +1,6 @@
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CarrouselContainer, Arrow } from './style'
 
 export interface CarrouselProps {
@@ -25,6 +25,12 @@ export function Carrousel({
       spacing,
     },
   })
+
+  useEffect(() => {
+    if (instanceRef.current) {
+      instanceRef.current.update({ slides: { perView, spacing } })
+    }
+  }, [instanceRef, perView, spacing])
 
   // Add a className to every child
   const newChildren = React.Children.map(children, (child) => {
