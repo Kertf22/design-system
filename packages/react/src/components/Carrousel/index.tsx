@@ -1,4 +1,4 @@
-import { useKeenSlider } from 'keen-slider/react'
+import { KeenSliderPlugin, useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import React, { useEffect } from 'react'
 import { CarrouselContainer, Arrow } from './style'
@@ -9,22 +9,41 @@ export interface CarrouselProps {
   spacing?: number
 }
 
+const MutationPlugin: KeenSliderPlugin = (slider) => {
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      slider.update()
+    })
+  })
+  const config = { childList: true }
+
+  slider.on('created', () => {
+    observer.observe(slider.container, config)
+  })
+  slider.on('destroyed', () => {
+    observer.disconnect()
+  })
+}
+
 export function Carrousel({
   children,
   perView = 'auto',
   spacing = 12,
 }: CarrouselProps) {
   const [currentSlide, setCurrentSlide] = React.useState(0)
-  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-    initial: 0,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel)
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
+    {
+      initial: 0,
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel)
+      },
+      slides: {
+        perView,
+        spacing,
+      },
     },
-    slides: {
-      perView,
-      spacing,
-    },
-  })
+    [MutationPlugin],
+  )
 
   useEffect(() => {
     if (instanceRef.current) {
@@ -32,21 +51,19 @@ export function Carrousel({
     }
   }, [instanceRef, perView, spacing])
 
-  // Add a className to every child
-  const newChildren = React.Children.map(children, (child) => {
-    if (React.isValidElement(child)) {
-      return (
-        <div key={child.key} className="keen-slider__slide">
-          {child}
-        </div>
-      )
-    }
-    return child
-  })
   return (
     <CarrouselContainer>
       <div ref={sliderRef} className="keen-slider">
-        {newChildren}
+        {React.Children.map(children, (child) => {
+          if (React.isValidElement(child)) {
+            return (
+              <div key={child.key} className="keen-slider__slide">
+                {child}
+              </div>
+            )
+          }
+          return child
+        })}
       </div>
 
       <>

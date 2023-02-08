@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.7.0
+
+### Minor Changes
+
+- Fix: Carrousel re-render problem
+
 ## 3.6.0
 
 ### Minor Changes
