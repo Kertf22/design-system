@@ -6,6 +6,7 @@ import {
   lineHeights,
   radii,
   space,
+  media,
 } from '@bet-kit-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
@@ -32,5 +33,6 @@ export const {
     lineHeights,
     radii,
     space,
+    media,
   },
 })
