@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.12.0
+
+### Minor Changes
+
+- Tokens fix
+
 ## 3.11.0
 
 ### Minor Changes

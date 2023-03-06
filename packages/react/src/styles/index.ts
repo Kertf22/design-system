@@ -8,7 +8,7 @@ import {
   space,
   media,
 } from '@bet-kit-ui/tokens'
-import { createStitches, defaultThemeMap } from '@stitches/react'
+import { createStitches } from '@stitches/react'
 
 export const {
   styled,
@@ -21,7 +21,6 @@ export const {
   config,
 } = createStitches({
   themeMap: {
-    ...defaultThemeMap,
     height: 'space',
     width: 'space',
   },
