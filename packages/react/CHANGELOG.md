@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.9.0
+
+### Minor Changes
+
+- Adding ticker componnet
+
 ## 3.8.0
 
 ### Minor Changes
