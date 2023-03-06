@@ -1,5 +1,11 @@
 # @bet-kit-ui/tokens
 
+## 2.7.0
+
+### Minor Changes
+
+- 180a485: Changing media consts
+
 ## 2.6.0
 
 ### Minor Changes
