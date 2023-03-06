@@ -1,5 +1,11 @@
 # @bet-kit-ui/react
 
+## 3.10.0
+
+### Minor Changes
+
+- 180a485: Changing media consts
+
 ## 3.9.0
 
 ### Minor Changes
